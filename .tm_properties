@@ -1,17 +1,17 @@
 # TextMate Settings
 ## Editing
 ### Font
-fontName         = "MesloLGMDZ"
-fontSize         = 14
+fontName = "MesloLGLDZ-Regular"
+fontSize = 14
 
 ### Default Editing Configuration
-softWrap         = false
-showWrapColumn   = true
-wrapColumn       = 80
-softTabs         = true
-tabSize          = 2
-showInvisibles   = true
-invisiblesMap    = "~ "
+softWrap = false
+showWrapColumn = true
+wrapColumn = 80
+softTabs = true
+tabSize = 2
+showInvisibles = true
+invisiblesMap = "~ "
 
 
 ## Code Quality
@@ -21,25 +21,20 @@ TM_JSLINTMATE_DEFAULT_LINTER = "jshint"
 
 ## File Browsing
 ### Excludes
-myExtraExcludes       = "log,tmp" 
+myExtraExcludes = "log,tmp"
 
-excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}" 
-excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}" 
-excludeInBrowser      = "{$excludeInBrowser,$myExtraExcludes}" 
-
-
-## Configure SCM
-### Use user installed git over system version
-TM_GIT = "/usr/local/bin/git"
+excludeInFileChooser = "{$excludeInFileChooser,$myExtraExcludes}"
+excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}"
+excludeInBrowser = "{$excludeInBrowser,$myExtraExcludes}"
 
 
 ## File Type Specific Configuration
 [ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
-binary           = true
+binary = true
 
 [ source ]
-softTabs         = true
-tabSize          = 2
+softTabs = true
+tabSize = 2
 
 [ "{README,INSTALL,LICENSE,TODO}" ]
-fileType         = "text.plain"
+fileType = "text.plain"

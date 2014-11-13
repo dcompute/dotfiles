@@ -7,5 +7,10 @@ for file in ~/.bash_addons/*; do
 done;
 unset file;
 
+# Enable bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Autocorrect `cd` path names
 shopt -s cdspell;

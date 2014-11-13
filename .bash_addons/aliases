@@ -19,14 +19,14 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
-# List all files colorized in long format
-alias lsl="ls -lF ${colorflag}"
+# List all files colorized in long format, excluding dot files
+alias lnd="ls -lhHF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias lnd="ls -laF ${colorflag}"
+alias lsl="ls -lAhHF ${colorflag}"
 
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+alias lsd="ls -lhHF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
@@ -50,3 +50,7 @@ alias getsize='sips -g pixelHeight -g pixelWidth'
 
 # Load apache with a custom configuration
 alias apache='sudo apachectl -f /usr/local/etc/apache2/httpd.conf'
+
+# Prevent file overwrites when moving or copying files
+alias mv='mv -i'
+alias cp='cp -i'

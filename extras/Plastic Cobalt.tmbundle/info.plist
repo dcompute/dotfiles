@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>qna@qnavryynpl.pbz</string>
+	<key>contactName</key>
+	<string>Daniel Lacy</string>
+	<key>description</key>
+	<string>Customized Theme mixing Cobalt with Plastic Code Wrap.
+</string>
+	<key>name</key>
+	<string>Plastic Cobalt</string>
+	<key>uuid</key>
+	<string>9ECB485F-FA79-4ACB-8D94-4E1E1CED7539</string>
+</dict>
+</plist>

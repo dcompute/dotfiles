@@ -1,18 +1,33 @@
 [alias]
-  # Branch shortcut
+  # Branch shortcuts
   b = branch
+  bd = branch -d
+  bdf = branch -D
 
-  # Commit shortcut
+  # Commit shortcuts
   ci = commit
-
-  # Inline a commit message
   cm = commit -m
 
-  # Checkout shortcut
+  # Checkout shortcuts
   co = checkout
 
   # Switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+  # Diff shortcuts
+  di = diff
+  dc = diff --cached
+  df = diff-tree --no-commit-id --name-only -r
+
+  # Rebase shortcuts
+  pr = pull --rebase
+  rc = rebase --continue
+
+  # Reset shortcuts
+  unstage = reset HEAD --
+
+  # Status shortcut
+  st = status
 
   # Show verbose output about tags, branches or remotes
   tags = tag -l
