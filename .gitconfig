@@ -1,6 +1,6 @@
 [core]
   # Use custom `.gitignore`
-  excludesfile = ~/.gitconfig.d/gitignore
+  excludesfile = .gitconfig.d/gitignore
 
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
   whitespace = space-before-tab,-indent-with-non-tab,trailing-space
@@ -9,7 +9,9 @@
   # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
   trustctime = false
 
+[push]
+  default = simple
+
 [include]
-  # Include additional configuration files
-  path = ~/.gitconfig.d/alias
-  path = ~/.gitconfig.d/color
+  path = .gitconfig.d/alias
+  path = .gitconfig.d/color
