@@ -9,9 +9,15 @@
   # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
   trustctime = false
 
+[credential]
+  # Use OS X keychain to store password
+  helper = osxkeychain
+
 [push]
+  # Use Git 2.0 upstream settings
   default = simple
 
 [include]
+  # Include additional configurations
   path = .gitconfig.d/alias
   path = .gitconfig.d/color
