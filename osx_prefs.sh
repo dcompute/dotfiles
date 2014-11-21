@@ -24,6 +24,9 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
+# Show percentage charge on battery menu.
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
