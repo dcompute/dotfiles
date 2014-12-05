@@ -15,6 +15,7 @@ set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
 " Centralize backups, swapfiles and undo history
+set viminfo+=n~/.vim/viminfo
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
