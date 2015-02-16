@@ -1,4 +1,4 @@
-# Disable the startup message
+# Disable startup message
 startup_message off
 
 # Set a large scrollback buffer

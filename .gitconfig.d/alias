@@ -3,6 +3,7 @@
   b = branch
   bd = branch -d
   bdf = branch -D
+  new = checkout -b
 
   # Commit shortcuts
   ci = commit
