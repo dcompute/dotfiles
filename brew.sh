@@ -16,13 +16,16 @@ brew install bash-completion
 # Install programs
 brew install ack
 brew install git
+brew install httpie
 brew install imagemagick --with-webp
 brew install lynx
 brew install mysql
 brew install node
+brew install tmux
 brew install tree
 brew install vim --override-system-vi
 brew install wget --with-iri
 
 # Perform final cleanup and remove any old package versions.
 brew cleanup
+
