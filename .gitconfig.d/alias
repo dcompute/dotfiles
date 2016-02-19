@@ -6,8 +6,10 @@
   new = checkout -b
 
   # Commit shortcuts
+  can = commit --amend --no-edit
   ci = commit
   cm = commit -m
+  amend = commit --amend
 
   # Checkout shortcuts
   co = checkout
@@ -29,6 +31,8 @@
 
   # Status shortcut
   st = status
+  oneline = log --oneline
+  recent = log -n 5
 
   # Show verbose output about tags, branches or remotes
   tags = tag -l
@@ -38,3 +42,4 @@
   # Remove branches that have already been merged with master
   # a.k.a. ‘delete merged’
   dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
