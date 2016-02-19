@@ -21,10 +21,10 @@ TM_JSLINTMATE_DEFAULT_LINTER = "jshint"
 
 ## File Browsing
 ### Excludes
-myExtraExcludes = "log,tmp,node_modules,images"
+myExtraExcludes = "log,tmp,node_modules,images,*.map"
 
 excludeInFileChooser = "{$excludeInFileChooser,$myExtraExcludes}"
-excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}"
+excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes,vendor}"
 excludeInBrowser = "{$excludeInBrowser,$myExtraExcludes}"
 
 
