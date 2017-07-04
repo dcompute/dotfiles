@@ -30,9 +30,10 @@
   unstage = reset HEAD --
 
   # Status shortcut
-  st = status
   oneline = log --oneline
+  peek = log --oneline -n 5
   recent = log -n 5
+  st = status
 
   # Show verbose output about tags, branches or remotes
   tags = tag -l

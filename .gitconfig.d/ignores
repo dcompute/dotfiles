@@ -35,3 +35,7 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Annoying, generated files
+.byebug_history
+

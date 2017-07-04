@@ -1,4 +1,4 @@
-export PATH="/usr/local/bin:$HOME/Applications:$PATH";
+export PATH="/usr/local/sbin:/usr/local/bin:$HOME/Applications:$PATH";
 
 # Load additional configurations.
 # Files ending in `.conf` in `~/.bash_profile.d/` will be sourced.
@@ -17,6 +17,10 @@ fi;
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
