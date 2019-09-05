@@ -28,16 +28,14 @@ set modeline
 set modelines=4
 " Enable line numbers
 set number
-" Enable syntax highlighting
-syntax on
 " Highlight current line
 set cursorline
 " Set tabs to spaces
 set expandtab
-" Make tabs as wide as two spaces
-set tabstop=2
-" Set indentation to two spaces
-set shiftwidth=2
+" Set tab width
+set tabstop=4
+" Set indentation
+set shiftwidth=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -88,3 +86,14 @@ if has("autocmd")
   " Treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" ------------------------------------------------------------------
+" Dcompute Colorscheme Config
+" ------------------------------------------------------------------
+syntax enable
+" set background=dark
+colorscheme dcompute
+" let g:dcompute_termcolors=256
+let g:dcompute_contrast="high"
+" let g:dcompute_visibility="normal"
+

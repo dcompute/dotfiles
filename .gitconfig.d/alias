@@ -22,6 +22,9 @@
   # Switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
+  # Set current branch upstream
+  up = "!git push -u origin `git symbolic-ref --quiet --short HEAD 2> /dev/null`"
+
   # Diff shortcuts
   di = diff
   dc = diff --cached
