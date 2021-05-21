@@ -5,3 +5,5 @@ for conf in ~/.zshrc.d/*.conf; do
 done;
 unset conf;
 
+bindkey -e
+
